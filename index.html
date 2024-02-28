@@ -113,6 +113,7 @@
       height: 100vh;
       pointer-events: none;
       opacity: 0.2;
+      background:url(./bg.jpg);
     }
   </style>
   <body>
@@ -196,8 +197,7 @@
             let key = Math.floor(Math.random() * num);
             // console.log(data.results[key].urls.regular);
             // let img = $("<img>");
-            bg.attr("src", data.results[key].urls.regular);
-            image.attr("src", "./bg.jpg");
+            bg.attr("src", data.results[key].urls.regular);            
           },
         });
         $.ajax({
