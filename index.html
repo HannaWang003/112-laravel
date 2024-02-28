@@ -126,8 +126,7 @@
         <div class="col position-absolute" style="top: 70%">
           <h1
             class="textillate loct text-sm-start text-center"
-            id="loctTitle"
-          ></h1>
+            id="loctTitle" style="font-size: clamp(4rem, 10vw, 10rem);"></h1>
         </div>
         <div id="condition" class="position-absolute col-9 col-sm-3 m-5">
           <!-- <div class="loct" id="loct"></div> -->
@@ -174,7 +173,7 @@
         $("#loctTitle").textillate({
           loop: false,
           in: {
-            effect: "fadeInLeftBig",
+            effect: "rollIn",
             delayScale: 1.5,
             delay: 200,
           },
