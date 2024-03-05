@@ -1,12 +1,956 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Brand</title>
-</head>
-<body>
-    <h1>Brand - Gucci</h1>
-</body>
+<html class="h-100" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="A growing collection of ready to use components for the CSS framework Bootstrap 5"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/apple-touch-icon.png"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/logo.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/logo.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="./img/logo.png"  />
+    <meta name="author" content="Holger Koenemann" />
+    <meta name="generator" content="Eleventy v2.0.0" />
+    <meta name="HandheldFriendly" content="true" />
+    <title>Brand - Gucci</title>
+    <link rel="stylesheet" href="css/theme.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <style>
+      /* inter-300 - latin */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: local(""), url("./fonts/inter-v12-latin-300.woff2") format("woff2"),
+          /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url("./fonts/inter-v12-latin-300.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      }
+
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: local(""), url("./fonts/inter-v12-latin-500.woff2") format("woff2"),
+          /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url("./fonts/inter-v12-latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: local(""), url("./fonts/inter-v12-latin-700.woff2") format("woff2"),
+          /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url("./fonts/inter-v12-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      }
+    </style>
+  </head>
+
+  <body data-bs-spy="scroll" data-bs-target="#navScroll">
+    <nav
+      id="navScroll"
+      class="navbar navbar-expand-lg navbar-light fixed-top"
+      tabindex="0"
+    >
+      <div class="container">
+        <a class="navbar-brand pe-4 fs-4" href="#">
+          <svg
+            id="_圖層_1"
+            data-name="圖層 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 340.16 340.16"
+            style="
+              background: rgba(255, 255, 255, 0.5);
+              box-shadow: 0 0 5px #0000007e;
+            "
+          >
+            <line
+              y1="174.75"
+              x2="340.16"
+              y2="174.75"
+              style="fill: none; stroke: #000; stroke-miterlimit: 10"
+            />
+            <line
+              x1="176.1"
+              y1="340.16"
+              x2="176.1"
+              y2="0"
+              style="fill: none; stroke: #000; stroke-miterlimit: 10"
+            />
+            <g>
+              <text
+                transform="translate(150.03 253.67)"
+                style="
+                  font-family: BritannicBold, 'Britannic Bold';
+                  font-size: 235.86px;
+                "
+              >
+                <tspan x="0" y="0">B</tspan>
+              </text>
+              <text
+                transform="translate(222.96 96.19) rotate(-180)"
+                style="
+                  font-family: BritannicBold, 'Britannic Bold';
+                  font-size: 237.29px;
+                "
+              >
+                <tspan x="0" y="0">D</tspan>
+              </text>
+              <line
+                x1="185.9"
+                y1="108.18"
+                x2="57.91"
+                y2="243.52"
+                style="
+                  fill: none;
+                  stroke: #000;
+                  stroke-miterlimit: 10;
+                  stroke-width: 30px;
+                "
+              />
+              <line
+                x1="54.06"
+                y1="98.97"
+                x2="54.06"
+                y2="253.67"
+                style="
+                  fill: none;
+                  stroke: #000;
+                  stroke-miterlimit: 10;
+                  stroke-width: 30px;
+                "
+              />
+            </g>
+          </svg>
+          <br />
+          <span class="ms-1 fw-bolder">Brand</span>
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#sign"> About Gucci </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="#yearshow">
+                Winter 2024
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="#gallery"> Gallery </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="#product"> Products </a>
+            </li>
+            <li class="nav-item bg-dark p-2">
+              <a class="nav-link text-secondary" href="{{route('chanels.index')}}"> Chanel </a>
+            </li>
+          </ul>
+          <a
+            href=""
+            data-splitbee-event="Click Download"
+            aria-label="Download this template"
+            class="link-dark pb-1 link-fancy me-2"
+          >
+            contact us
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="w-100 overflow-hidden bg-gray-100" id="top">
+        <div class="container position-relative">
+          <div
+            class="col-12 col-lg-8 mt-0 h-100 position-absolute top-0 end-0 bg-cover"
+            data-aos="fade-left"
+            style="
+              background-image: url(img/max-anderson-vqj5A4C7v_A-unsplash.jpg);
+            "
+          ></div>
+          <div class="row">
+            <div
+              class="col-lg-7 py-vh-6 position-relative"
+              data-aos="fade-right"
+            >
+              <h1 class="display-1 fw-bold mt-5">Gucci</h1>
+              <p class="lead text-secondary">
+                「我的夢，就像我設計的時裝作品，總是與現實對話。因為我追求的不是活在另一個世界，而是追尋在現存世界中的生活型態。」——
+                Sabato De Sarno
+              </p>
+              <a
+                href="https://www.gucci.com/us/en/"
+                class="btn btn-dark btn-xl shadow me-3 rounded-0 my-5"
+                >official website</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="py-vh-5 w-100 overflow-hidden" id="sign">
+        <div class="container">
+          <div class="row d-flex justify-content-end">
+            <div class="col-lg-8" data-aos="fade-down">
+              <img src="./img/gucci.png" style="width: 20vw" alt="" />
+              <h2 class="display-6">
+                古馳在創辦時只是一間小型，家族式經營的馬鞍及皮具商店
+              </h2>
+            </div>
+          </div>
+          <div class="row d-flex align-items-center">
+            <div
+              class="col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div
+                class="d-flex justify-content-between align-items-center"
+                style="width: 100%"
+              >
+                <div class="h5 fw-lighter">01.</div>
+                <img
+                  src="./img/gucci-logo.png"
+                  style="width: 8vw; min-width: 150px"
+                />
+              </div>
+              <h3 class="py-5 border-top border-dark">雙G標誌</h3>
+              <p>
+                經典的「雙G」LOGO其實是由創辦人Guccio Gucci的兒子Aldo
+                Gucci加入公司後，在1933年以父親Guccio
+                Gucci名字裡的兩個大寫「G」、作為發想所設計的經典標誌。起初以顛倒相反的兩個「G」相扣而成，隨後在2015年藝術總監Alessandro
+                Michele上任後大膽地將LOGO改為兩個正「G」重疊，為品牌開展全新的樣貌
+              </p>
+              <a
+                href="https://www.elle.com/tw/fashion/issue/g34569957/5-gucci-logo-story/"
+                class="link-fancy"
+                >Learn more
+              </a>
+            </div>
+
+            <div
+              class="col-md-6 col-lg-4 py-vh-4 pb-0"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div
+                class="d-flex justify-content-between align-items-center"
+                style="width: 100%"
+              >
+                <span class="h5 fw-lighter">02.</span
+                ><img
+                  src="./img/2.png"
+                  style="width: 12vw; min-width: 150px"
+                  class="pb-3"
+                />
+              </div>
+              <h3 class="py-5 border-top border-dark">馬銜鍊標誌</h3>
+              <p>
+                在1930年代創立的Gucci，最初是以製作馬術用具起家，在那個以馬術運動來象徵個人階級地位的年代，馬術更是上流社會貴族相當重要的活動之一，因此許多品牌的經典符碼其實都與馬術有著密不可分的關聯性，而馬銜鍊標誌就是其中之一
+              </p>
+              <a
+                href="https://www.elle.com/tw/fashion/issue/g34569957/5-gucci-logo-story/"
+                class="link-fancy"
+                >Learn more
+              </a>
+            </div>
+
+            <div
+              class="col-md-6 col-lg-4 py-vh-6 pb-0"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
+              <div
+                class="d-flex justify-content-between align-items-center"
+                style="width: 100%"
+              >
+                <span class="h5 fw-lighter">03.</span
+                ><img
+                  src="./img/3.png"
+                  style="width: 10vw; min-width: 150px"
+                  class="pb-3"
+                />
+              </div>
+              <h3 class="py-5 border-top border-dark">綠紅綠織帶</h3>
+              <p>
+                同樣是取自於馬術文化，被世人所熟知的Gucci「綠紅綠」Webbing織帶、靈感是來自要馬鞍固定於馬背上時，所運用的「馬腹帶」。至於為什麼是以撞色醒目的「綠紅綠」為配色？一個原因是因為當時馬具的習慣用色而決定的，另一個原因則是汲取於品牌發源地――義大利的綠白紅國旗
+              </p>
+              <a
+                href="https://www.elle.com/tw/fashion/issue/g34569957/5-gucci-logo-story/"
+                class="link-fancy"
+                >Learn more
+              </a>
+            </div>
+            <div
+              class="col-md-6 col-lg-4 py-vh-6 pb-0"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
+              <div
+                class="d-flex justify-content-between align-items-center"
+                style="width: 100%"
+              >
+                <span class="h5 fw-lighter">04.</span
+                ><img
+                  src="./img/4.png"
+                  style="width: 8vw; min-width: 150px"
+                  class="pb-3"
+                />
+              </div>
+              <h3 class="py-5 border-top border-dark">竹節元素</h3>
+              <p>
+                竹節手提把的出現是在1945年第二次世界大戰後，因為原料短缺的影響讓Gucci發揮創意，決定加入日本的「竹藤」元素做替換。這樣的大膽嘗試不僅因為需要經過多道的層層關卡、將竹子加熱後一點一滴的慢慢彎成提把的形狀，讓每個包成為獨一無二的單品，融合東西方風情的創意更是讓Gucci成為首個運用竹子元素的精品品牌
+              </p>
+              <a
+                href="https://www.elle.com/tw/fashion/issue/g34569957/5-gucci-logo-story/"
+                class="link-fancy"
+                >Learn more
+              </a>
+            </div>
+            <div
+              class="col-md-6 col-lg-4 py-vh-6 pb-0"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
+              <div
+                class="d-flex justify-content-between align-items-center"
+                style="width: 100%"
+              >
+                <span class="h5 fw-lighter">05.</span
+                ><img
+                  src="./img/777068_3G001_9864_002_100_0000_Light.avif"
+                  style="width: 10vw; min-width: 150px"
+                  class="pb-3"
+                />
+              </div>
+              <h3 class="py-5 border-top border-dark">Gucci Flora</h3>
+              <p>
+                插畫家Vittorio
+                Accornero以義大利畫家波提且利（Botticelli）的名作《春》（Primavera）為靈感，繪製出豐富又鮮豔的大自然圖案印至於絲巾上，並將之命名為「花神」（Flora），成為當時的人氣元素之一
+              </p>
+              <a
+                href="https://www.elle.com/tw/fashion/issue/g34569957/5-gucci-logo-story/"
+                class="link-fancy"
+                >Learn more
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="py-vh-4 bg-gray-100 w-100 overflow-hidden" id="yearshow">
+        <div class="container">
+          <div class="row d-flex justify-content-between align-items-center">
+            <div class="col-lg-6">
+              <iframe
+                data-aos="fade-up"
+                width="600"
+                height="400"
+                src="https://www.youtube.com/embed/M8v5wU5Xa3A?si=WdEQu2MPWq8psex0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="col-lg-4">
+              <h2 data-aos="fade-down">Sabato De Sarno</h2>
+              <h3 class="py-5 border-top border-dark" data-aos="fade-left">
+                Date: 2024/02/23
+              </h3>
+              <h3 data-aos="fade-right">City: Milan</h3>
+              <p data-aos="fade-left" data-aos-delay="200">
+                本季為 Sabato De Sarno 入主 Gucci
+                的第二季女裝發表，大秀設於米蘭近郊的倉庫中，銀白色伸展台忠實反應設計師對簡約洗練的喜好，由
+                Mark Ronson
+                操刀的背景歌曲〈Coronacid〉歌詞緩緩吟唱：「Reset...Reset...」，似乎也在試著慢慢刷新人們對於
+                Gucci 的印象
+              </p>
+              <p>
+                <a
+                  href="https://www.gucci.com/hk/zh_hk/ms/women-fall-winter-24-fashion-show"
+                  class="link-fancy link-dark"
+                  data-aos="fade-left"
+                  data-aos-delay="400"
+                  >Learn more
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="py-vh-5 w-100 overflow-hidden" id="numbers">
+        <div class="container">
+          <div class="row d-flex justify-content-between align-items-center">
+            <div class="col-lg-5">
+              <h3 class="py-5 border-top border-dark" data-aos="fade-right">
+                米蘭時裝週
+              </h3>
+            </div>
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-12">
+                  <h2 class="display-6 mb-5" data-aos="fade-down">
+                    Sabato De Sarno
+                    為自己設了一個挑戰：「把我討厭的東西跟我喜歡的東西結合，創造出新的風格。」
+                  </h2>
+                </div>
+                <div class="col-lg-6" data-aos="fade-up">
+                  <div class="display-1 fw-bold py-4">.</div>
+                  <p class="text-black-50">尋求一種微妙的顛覆性姿態</p>
+                </div>
+                <div class="col-lg-6" data-aos="fade-up">
+                  <div class="display-1 fw-bold py-4"><-></div>
+                  <p class="text-black-50">極繁到極簡</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="position-relative overflow-hidden w-100 bg-light"
+        id="gallery"
+      >
+        <div class="container-fluid">
+          <div class="row overflow-scroll">
+            <div class="col-12">
+              <div
+                class="row vw-100 px-0 py-vh-5 d-flex align-items-center scrollx"
+              >
+                <div class="col-md-2" data-aos="fade-up">
+                  <img
+                    src="./img/1.jpg"
+                    class="rounded shadow img-fluid"
+                    alt="nice gallery image"
+                    width="512"
+                    height="341"
+                  />
+                </div>
+
+                <div class="col-md-2" data-aos="fade-up" data-aos-delay="200">
+                  <img
+                    src="./img/2.jpg"
+                    class="img-fluid rounded shadow"
+                    alt="nice gallery image"
+                    width="1164"
+                    height="776"
+                  />
+                </div>
+
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="400">
+                  <img
+                    src="./img/6.jpg"
+                    class="img-fluid rounded shadow"
+                    alt="nice gallery image"
+                    width="844"
+                    height="1054"
+                  />
+                </div>
+
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="600">
+                  <img
+                    src="./img/9.jpg"
+                    class="img-fluid rounded shadow"
+                    alt="nice gallery image"
+                    width="844"
+                    height="562"
+                  />
+                </div>
+
+                <div class="col-md-2" data-aos="fade-up" data-aos-delay="800">
+                  <img
+                    src="./img/10.jpg"
+                    class="rounded shadow img-fluid"
+                    alt="nice gallery image"
+                    width="512"
+                    height="341"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container py-vh-4 w-100 overflow-hidden">
+        <div class="row d-flex justify-content-center align-items-center">
+          <div class="col-lg-5">
+            <h3 class="py-5 border-top border-dark" data-aos="fade-right">
+              從平凡尋找不平凡
+            </h3>
+          </div>
+          <div class="col-md-7" data-aos="fade-left">
+            <blockquote>
+              <img
+                src="img/SabatoDeSarno.png"
+                width="200px"
+                height="200px"
+                class="img-fluid me-3"
+                alt=""
+                data-aos="fade"
+              />
+              <span><span class="fw-bold">Sabato De Sarno</span> Designer</span>
+              <div class="fs-4 my-3 fw-light pt-4 border-bottom pb-3">
+                “40 歲的 De Sarno 先是在 Prada，後來又在 Valentino
+                工作，是一位名不見經傳的工作室負責人。在古馳，他負責一個 200
+                多人的設計團隊，該團隊最近從羅馬搬到了位於米蘭的全球公司總部。De
+                Sarno 每天都穿著黑色 T 恤和黑色
+                Levi's，就像他的短髮一樣簡單，他說這份工作並沒有改變他。「我不喜歡只是坐在這裡說『是』或『不是』。對我來說，這樣的工作三秒鐘就會厭倦，我想和人們在一起創造一些東西。」”
+              </div>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="py-vh-6 bg-gray-900 text-light w-100 overflow-hidden"
+        id="workwithus"
+      >
+        <div class="container">
+          <div class="row d-flex justify-content-center">
+            <div class="row d-flex justify-content-center text-center">
+              <div class="col-lg-8 text-center">
+                <img
+                  src="./img/MediaComponent-HistoryPage1-Desktop.jpg"
+                  data-aos="fade-right"
+                  style="width: 100%"
+                  data-aos="fade"
+                />
+                <p class="text-secondary text-end">
+                  1953 年，佛羅倫斯 Gucci 工作坊的工匠 | © Archivio Foto Locchi
+                  Firenze
+                </p>
+                <h2 class="display-6 mb-5" data-aos="fade">
+                  Gucci
+                  代表義大利工藝的巔峰，其設計以品質和注重細節而無與倫比。在品牌百年慶後，Gucci
+                  持續重新定義奢華，並透過其成衣、皮件、鞋履、包款、珠寶、腕錶、家居裝飾等系列，頌揚創意與創新。
+                </h2>
+              </div>
+              <div class="col-12">
+                <a
+                  href="https://www.gucci.com/us/en/st/history-of-gucci"
+                  class="btn btn-warning btn-xl shadow me-3 mt-4"
+                  data-aos="fade-down"
+                  >HISTORY OF GUCCI</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-light w-100 overflow-hidden" id="testimonials">
+        <div class="container py-vh-6" id="product">
+          <div class="row d-flex justify-content-center">
+            <div class="col-12 col-lg-10 col-xl-8 text-center">
+              <h2 class="display-6">CATEGORY</h2>
+            </div>
+            <div class="col-12 mt-4">
+              <div
+                class="row row-cols-1 row-cols-md-2 g-5 d-flex align-items-center"
+              >
+                <div class="col-12 col-lg-6 col-xl-4" data-aos="fade-right">
+                  <div class="card p-4 mt-3 border-0">
+                    <div class="card-body">
+                      <div class="text-dark py-2 fs-3">
+                        <img
+                          src="./img/723309_9C2ST_8746_001_100_0000_Light.avif"
+                          style="width: 15vw; min-width: 200px"
+                        />
+                      </div>
+                      <blockquote class="blockquote">
+                        <h2>BAGS</h2>
+                      </blockquote>
+                      <div
+                        class="d-flex justify-content-between border-top pt-3"
+                      >
+                        <div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-lg-6 col-xl-4">
+                  <div
+                    class="card p-4 shadow mt-3 border-0"
+                    data-aos="fade-down"
+                  >
+                    <div class="card-body">
+                      <div class="text-dark py-2 fs-3">
+                        <img
+                          src="./img/CategorySingle_7553779PL129208-white-white-new_001_Light.avif"
+                          style="width: 15vw; min-width: 200px"
+                        />
+                      </div>
+                      <blockquote class="blockquote">
+                        <h2>BEAUTY</h2>
+                        <!-- <p>"I really don´t get what they do. Something with Crypto, NFT´s, SaaS and Cyber Security. Maybe an App for Kids...? But they have this nice website...so who cares what they do as long as they are good at it."</p> -->
+                      </blockquote>
+                      <div
+                        class="d-flex justify-content-between border-top pt-3"
+                      >
+                        <p class="card-text">
+                          <!-- <span class="h6 fw-5">Jenny Matrix</span><br>
+              <small class="text-muted">Daughter of Col. John Matrix, Commando.</small> -->
+                        </p>
+                        <!-- <img src="img/webp/person3.webp" width="48" height="48" class="rounded-circle" alt="" data-aos="fade"> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-lg-6 col-xl-4">
+                  <div class="card p-4 mt-3 border-0" data-aos="fade-left">
+                    <div class="card-body">
+                      <div class="text-dark py-2 fs-3">
+                        <img
+                          src="./img/789050_I8157_8027_002_100_0000_Light.avif"
+                          style="width: 15vw; min-width: 200px"
+                        />
+                      </div>
+                      <blockquote class="blockquote">
+                        <h2>JEWELRY & WATCHES</h2>
+                        <!-- <p>"I don´t know if they are good at what they do. But they have nice coffee and a shiny brand new startup office with bikes on the wall and all that stuff."</p> -->
+                      </blockquote>
+                      <div
+                        class="d-flex justify-content-between border-top pt-3"
+                      >
+                        <p class="card-text">
+                          <!-- <span class="h6 fw-5">Rustin Cohle</span><br>
+              <small class="text-muted">Detective, Somewhere in the swamps</small> -->
+                        </p>
+                        <!-- <img src="img/webp/person8.webp" width="48" height="48" class="rounded-circle" alt="" data-aos="fade"> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-lg-6 col-xl-4">
+                  <div class="card p-4 mt-3 border-0" data-aos="fade-right">
+                    <div class="card-body">
+                      <div class="text-dark py-2 fs-3">
+                        <img
+                          src="./img/774108_ZARL7_1200_003_100_0000_Light-GG-jacquard-armchair.avif"
+                          style="width: 15vw; min-width: 200px"
+                        />
+                      </div>
+                      <blockquote class="blockquote">
+                        <h2>DÉCOR & LIFESTYLE</h2>
+                        <!-- <p>"Its not good at all but I give it five stars because I killed (accidentally) the CEO´s cat with a lawnmover."</p> -->
+                      </blockquote>
+                      <div
+                        class="d-flex justify-content-between border-top pt-3"
+                      >
+                        <p class="card-text">
+                          <!-- <span class="h6 fw-5">Richard Thornburg</span><br>
+              <small class="text-muted">News Reporter, KFLW-TV</small> -->
+                        </p>
+                        <!-- <img src="img/webp/person14.webp" width="48" height="48" class="rounded-circle" alt="" data-aos="fade"> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-lg-6 col-xl-4">
+                  <div class="card p-4 mt-3 border-0" data-aos="fade-up">
+                    <div class="card-body">
+                      <div class="text-dark py-2 fs-3">
+                        <img
+                          src="./img/734909_AABK6_1000_002_100_0000_Light-Womens-mid-heel-boot-with-logo.webp"
+                          style="width: 15vw; min-width: 200px"
+                        />
+                      </div>
+                      <blockquote class="blockquote">
+                        <h2>SHOES</h2>
+                        <!-- <p>"I´am just a guy who uploads his picture to unsplash.com so that others can use me as placeholder for stupid sample avatars. I don´t even know that my face is on this website."</p> -->
+                      </blockquote>
+                      <div
+                        class="d-flex justify-content-between border-top pt-3"
+                      >
+                        <p class="card-text">
+                          <!-- <span class="h6 fw-5">Harry Walters</span><br> -->
+                          <!-- <small class="text-muted">Gangster, In Bruges</small> -->
+                        </p>
+                        <!-- <img src="img/webp/person13.webp" width="48" height="48" class="rounded-circle" alt="" data-aos="fade"> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-lg-6 col-xl-4">
+                  <div
+                    class="card p-4 shadow mt-3 border-0"
+                    data-aos="fade-left"
+                  >
+                    <div class="card-body">
+                      <div class="text-dark py-2 fs-3">
+                        <img
+                          src="./img/PromoComponent_Gucci-SS24-Jan24-1602-GUC-013D-0398-R-v4-ME-300dpi-sRGB_001_Default.avif"
+                          style="width: 15vw; min-width: 200px"
+                        />
+                      </div>
+                      <blockquote class="blockquote">
+                        <h2>READY-TO-WEAR</h2>
+                      </blockquote>
+                      <div
+                        class="d-flex justify-content-between border-top pt-3"
+                      >
+                        <p class="card-text"></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="small py-vh-3 w-100 overflow-hidden">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-lg-4 border-end" data-aos="fade-up">
+              <div class="d-flex">
+                <div class="col-md-3 flex-fill pt-3 pe-3 pe-md-0">
+                  <i class="fa-solid fa-wave-square fa-2xl"></i>
+                </div>
+                <div class="col-md-9 flex-fill">
+                  <h3 class="h5 my-2">TOP 10</h3>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-md-6 col-lg-4 border-end"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="d-flex">
+                <div class="col-md-3 flex-fill pt-3 pt-3 pe-3 pe-md-0">
+                  <i class="fa-solid fa-snowflake fa-2xl"></i>
+                </div>
+                <div class="col-md-9 flex-fill">
+                  <h3 class="h5 my-2">WINTER 2024</h3>
+                  <p>simple plus exquisite</p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div class="d-flex">
+                <div class="col-md-3 flex-fill pt-3 pt-3 pe-3 pe-md-0">
+                  <i class="fa-solid fa-rectangle-ad fa-2xl"></i>
+                </div>
+                <div class="col-md-9 flex-fill">
+                  <h3 class="h5 my-2">NEWS</h3>
+                  <p>
+                    Vogue -
+                    <a
+                      href="https://www.vogue.com.tw/article/gucci-2024-fall-ready-to-wear"
+                      style="
+                        text-decoration: none;
+                        border-bottom: 1px solid #333;
+                      "
+                      >Gucci 2024 秋冬解析： Sabato De Sarno
+                      逆勢看漲，夢回黃金年代｜米蘭時裝週</a
+                    >
+                  </p>
+                  <p>
+                    GQ -
+                    <a
+                      href="https://www.gq.com.tw/article/gucci-2024%E7%A7%8B%E5%86%AC%E7%94%B7%E8%A3%9D%E7%A7%80-%E4%BA%AE%E9%BB%9E%E5%9B%9E%E9%A1%A7"
+                      >GUCCI 2024 秋冬男裝秀《GUCCI
+                      ANCORA》精彩亮點回顧，「鏡射手法」巧妙呼應女裝首秀！</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="container py-vh-3 border-top"
+        data-aos="fade"
+        data-aos-delay="200"
+      >
+        <div class="row d-flex justify-content-center">
+          <div class="col-12 col-lg-8 text-center">
+            <h3 class="fs-2 fw-light">
+              Stay in touch with our<span class="fw-bold">
+                monthly and free</span
+              >
+              newsletter!
+            </h3>
+          </div>
+          <div class="col-12 col-lg-8 text-center">
+            <div class="row">
+              <div class="grouped-inputs border bg-light p-2">
+                <div class="row">
+                  <div class="col">
+                    <form class="form-floating">
+                      <input
+                        type="email"
+                        class="form-control p-3"
+                        id="floatingInput"
+                        placeholder="name@example.com"
+                      />
+                      <label for="floatingInput">Email address</label>
+                    </form>
+                  </div>
+                  <div class="col-auto">
+                    <a href="#" class="btn btn-dark py-3 px-5">Subscribe</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container small border-top">
+        <div class="row py-5 d-flex justify-content-between">
+          <div class="col-12 col-lg-6 col-xl-3 border-end p-5">
+            <img
+              src="./img/logo.png"
+              style="min-width: 100px; max-width: 8vw"
+            />
+            <address class="text-secondary mt-3">
+              <strong>Brand, Inc.</strong><br />
+              Taisan<br />
+              <abbr title="Phone">P:</abbr>
+              (123) 456-7890
+            </address>
+          </div>
+          <div class="col-12 col-lg-6 col-xl-3 border-end p-5">
+            <h3 class="h6 mb-3">Brand Finance</h3>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <p>
+                  <a
+                    class="nav-link link-secondary ps-0"
+                    aria-current="page"
+                    href="https://brandfinance.com/insights/global-500-2023-report-published"
+                    >Global 500 2023 Report Published</a
+                  >
+                </p>
+                <p style="text-align: end">- 18 January 2023</p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-6 col-xl-3 border-end p-5">
+            <h3 class="h6 mb-3">Industry</h3>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a
+                  class="nav-link link-secondary ps-0"
+                  aria-current="page"
+                  href="#"
+                  >Fashion</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-secondary ps-0" href="#">Car</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-secondary ps-0" href="#">3C</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-6 col-xl-3 p-5">
+            <h3 class="h6 mb-3">Brand</h3>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a
+                  class="nav-link link-secondary ps-0"
+                  aria-current="page"
+                  href="https://tw.louisvuitton.com/zht-tw/homepage"
+                  >LouisVuitton</a
+                >
+                <a
+                  class="nav-link link-secondary ps-0"
+                  aria-current="page"
+                  href="https://www.chanel.com/ca-en/"
+                  >Chanel</a
+                >
+                <a
+                  class="nav-link link-secondary ps-0"
+                  aria-current="page"
+                  href="https://www.hermes.com/us/en/"
+                  >Hermès</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="container text-center py-3 small">&COPY;2024-02-29</div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800, // values from 0 to 3000, with step 50ms
+      });
+    </script>
+
+    <script>
+      let scrollpos = window.scrollY;
+      const header = document.querySelector(".navbar");
+      const header_height = header.offsetHeight;
+
+      const add_class_on_scroll = () =>
+        header.classList.add("scrolled", "shadow-sm");
+      const remove_class_on_scroll = () =>
+        header.classList.remove("scrolled", "shadow-sm");
+
+      window.addEventListener("scroll", function () {
+        scrollpos = window.scrollY;
+
+        if (scrollpos >= header_height) {
+          add_class_on_scroll();
+        } else {
+          remove_class_on_scroll();
+        }
+
+        console.log(scrollpos);
+      });
+    </script>
+  </body>
 </html>

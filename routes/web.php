@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BrandController;
+use App\Http\Controllers\ChanelController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,6 +16,9 @@ use App\Http\Controllers\BrandController;
 */
 
 Route::get('/', function () {
-    return redirect('/brand');
+    // return view('welcome');
+    return redirect('/brands');
 });
-Route::resource('brand', BrandController::class);
+
+Route::resource('brands', BrandController::class);
+Route::resource('chanels', ChanelController::class);
