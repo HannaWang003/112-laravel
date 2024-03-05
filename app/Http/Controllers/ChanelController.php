@@ -61,4 +61,9 @@ class ChanelController extends Controller
     {
         //
     }
+
+    public function test()
+    {
+        return view('chanel.test');
+    }
 }

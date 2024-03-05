@@ -22,3 +22,5 @@ Route::get('/', function () {
 
 Route::resource('brands', BrandController::class);
 Route::resource('chanels', ChanelController::class);
+
+Route::get('/chaneltest', [ChanelController::class, 'test'])->name('Chanel.test');
