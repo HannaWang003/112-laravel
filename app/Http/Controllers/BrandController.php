@@ -14,6 +14,8 @@ class BrandController extends Controller
         // $url = asset('brands');
         // $url = route('brands.index');
         // dd($url);
+        // $redirect = redirect('to');
+        // dd($redirect);
         return view('brand.index');
     }
 

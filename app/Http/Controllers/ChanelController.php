@@ -27,7 +27,8 @@ class ChanelController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $input = $request->except('_token');
+        dd($input);
     }
 
     /**
