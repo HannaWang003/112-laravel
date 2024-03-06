@@ -28,18 +28,16 @@
             </tr>
         </thead>
         <tbody>
-        <?php
+@php
 $products=['handbag','watch','jewelry','shoes'];
-foreach($products as $idx=> $product){
-        ?>
+@endphp
+@foreach($products as $idx=> $product)
         <tr>
             <td><?=$idx+1?></td>
             <td><?=$product?></td>
             <td><a class="btn btn-secondary mx-2" href="{{route('chanels.edit', ['chanel' => $idx+1])}}">Edit</a><a class="btn btn-outline-secondary" href="">Del</a></td>
         </tr>
-        <?php
-        }
-        ?>
+@endforeach
     </tbody>
     </table>
     <h3 class='text-end'><a class="btn btn-outline-dark" href="{{route('brands.index')}}">back</a></h3>
