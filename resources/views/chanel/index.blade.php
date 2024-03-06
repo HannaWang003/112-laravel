@@ -7,6 +7,11 @@
     <title>Chanel - Page</title>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css'/>    
 </head>
+<style>
+    td{
+        vertical-align:middle;
+    }
+</style>
 <body>
     <div class="container m-3 mx-auto">
         <h1>Chanel - Page</h1>
@@ -23,16 +28,18 @@
             </tr>
         </thead>
         <tbody>
+        <?php
+$products=['handbag','watch','jewelry','shoes'];
+foreach($products as $idx=> $product){
+        ?>
         <tr>
-            <td>1</td>
-            <td>handbag</td>
-            <td><a href="">Edit</a><a href="">Del</a></td>
+            <td><?=$idx+1?></td>
+            <td><?=$product?></td>
+            <td><a class="btn btn-secondary mx-2" href="">Edit</a><a class="btn btn-outline-secondary" href="">Del</a></td>
         </tr>
-        <tr>
-            <td>2</td>
-            <td>watch</td>
-            <td><a href="">Edit</a><a href="">Del</a></td>
-        </tr>
+        <?php
+        }
+        ?>
     </tbody>
     </table>
     <h3 class='text-end'><a class="btn btn-outline-dark" href="{{route('brands.index')}}">back</a></h3>
