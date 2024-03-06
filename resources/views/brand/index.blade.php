@@ -22,7 +22,7 @@
     <meta name="generator" content="Eleventy v2.0.0" />
     <meta name="HandheldFriendly" content="true" />
     <title>Brand - Gucci</title>
-    <link rel="stylesheet" href="css/theme.min.css" />
+    <link rel="stylesheet" href="./css/theme.min.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"

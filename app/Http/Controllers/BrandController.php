@@ -11,6 +11,9 @@ class BrandController extends Controller
      */
     public function index()
     {
+        // $url = asset('brands');
+        // $url = route('brands.index');
+        // dd($url);
         return view('brand.index');
     }
 
