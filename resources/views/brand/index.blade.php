@@ -15,14 +15,14 @@
       sizes="180x180"
       href="img/apple-touch-icon.png"
     />
-    <link rel="icon" type="image/png" sizes="32x32" href="./img/logo.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./img/logo.png" />
-    <link rel="icon" type="image/png" sizes="96x96" href="./img/logo.png"  />
+    <link rel="icon" type="image/png" sizes="32x32" href="{{asset('img/logo.png')}}" />
+    <link rel="icon" type="image/png" sizes="16x16" href="{{asset('img/logo.png')}}" />
+    <link rel="icon" type="image/png" sizes="96x96" href="{{asset('img/logo.png')}}"  />
     <meta name="author" content="Holger Koenemann" />
     <meta name="generator" content="Eleventy v2.0.0" />
     <meta name="HandheldFriendly" content="true" />
     <title>Brand - Gucci</title>
-    <link rel="stylesheet" href="./css/theme.min.css" />
+    <link rel="stylesheet" href="{{asset('css/theme.min.css')}}" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -922,8 +922,8 @@
       <div class="container text-center py-3 small">&COPY;2024-02-29</div>
     </footer>
 
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/aos.js"></script>
+    <script src="{{asset('js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{asset('js/aos.js')}}"></script>
     <script>
       AOS.init({
         duration: 800, // values from 0 to 3000, with step 50ms
