@@ -138,8 +138,11 @@
             <li class="nav-item">
               <a class="nav-link text-secondary" href="#product"> Products </a>
             </li>
-            <li class="nav-item bg-dark p-2">
-              <a class="nav-link text-secondary" href="{{route('chanels.index')}}"> Chanel </a>
+            <li class="nav-item border border-dark bg-light p-2">
+              <a class="nav-link text-dark" href="{{route('chanels.index')}}"> Chanel </a>
+            </li>
+            <li class="nav-item border border-light bg-dark p-2">
+              <a class="nav-link text-light" href="{{route('template')}}"> template </a>
             </li>
           </ul>
           <a

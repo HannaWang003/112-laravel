@@ -19,6 +19,10 @@ Route::get('/', function () {
     // return view('welcome');
     return redirect('/brands');
 });
+Route::get('/child', function () {
+    // return view('welcome');
+    return view('child');
+})->name('template');
 
 Route::resource('brands', BrandController::class);
 Route::resource('chanels', ChanelController::class);
