@@ -35,7 +35,7 @@ foreach($products as $idx=> $product){
         <tr>
             <td><?=$idx+1?></td>
             <td><?=$product?></td>
-            <td><a class="btn btn-secondary mx-2" href="">Edit</a><a class="btn btn-outline-secondary" href="">Del</a></td>
+            <td><a class="btn btn-secondary mx-2" href="{{route('chanels.edit', ['chanel' => $idx+1])}}">Edit</a><a class="btn btn-outline-secondary" href="">Del</a></td>
         </tr>
         <?php
         }

@@ -28,7 +28,8 @@ class ChanelController extends Controller
     public function store(Request $request)
     {
         $input = $request->except('_token');
-        dd($input);
+        // dd($input);
+        return redirect(route('chanels.index'));
     }
 
     /**
@@ -44,7 +45,7 @@ class ChanelController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        dd("hello $id");
     }
 
     /**

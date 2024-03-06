@@ -14,7 +14,7 @@
 </style>
 <body>
     <div class="container m-3 mx-auto">
-        <h1>Chanel - creat</h1>
+        <h1>Chanel - create</h1>
 <p>Lorem ipsum dolor sit amet.</p>
 <form action="{{route('chanels.store')}}" method='post'>
     @csrf
