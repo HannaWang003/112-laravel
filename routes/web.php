@@ -19,7 +19,7 @@ Route::get('/', function () {
     // return view('welcome');
     return redirect('/brands');
 });
-Route::get('/child', function () {
+Route::get('/template', function () {
     // return view('welcome');
     return view('child');
 })->name('template');
