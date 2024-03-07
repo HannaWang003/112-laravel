@@ -26,19 +26,22 @@
                 <th>PRODUCT</th>
                 <th>num</th>
                 <th>sh</th>
-                <th>votes</th>
+                <th>relative - product</th>
                 <th>OPERATE</th>
             </tr>
         </thead>
         <tbody>
-@foreach($data['chanels'] as $idx=> $product)
+            {{-- @php
+dd($data);
+            @endphp --}}
+@foreach($data as $idx=> $product)
         <tr>
             <td>{{$idx+1}}</td>
             <td>{{$product->product}}</td>
             <td>{{$product->num}}</td>
             <td>{{$product->sh}}</td>
-            <td>{{$product->votes}}</td>
-            <td><a class="btn btn-secondary mx-2" href="{{route('chanels.edit', ['chanel' => $idx+1])}}">Edit</a><a class="btn btn-outline-secondary" href="">Del</a></td>
+            <td>{{$product->products->sh}}</td>
+            <td><a class="btn btn-secondary mx-2" href="{{route('diors.edit', ['dior' => $idx+1])}}">Edit</a><a class="btn btn-outline-secondary" href="">Del</a></td>
         </tr>
 @endforeach
     </tbody>

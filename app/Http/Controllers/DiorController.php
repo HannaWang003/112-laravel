@@ -12,7 +12,8 @@ class DiorController extends Controller
      */
     public function index()
     {
-        dd('index ok');
+        $data = Dior::get();
+        return view('dior.index', ['data' => $data]);
     }
 
     /**
