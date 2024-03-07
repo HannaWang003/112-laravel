@@ -22,13 +22,7 @@ class ChanelController extends Controller
      */
     public function create()
     {
-        $data = [
-            ['product' => 'underwear', 'num' => '2', 'sh' => '1', 'votes' => 0],
-            ['product' => 'shock', 'num' => '100', 'sh' => '1', 'votes' => 0],
-        ];
-        DB::table('chanels')->insert($data);
-        dd($data);
-        // return view('chanel.create');
+        return view('chanel.create');
     }
 
 
@@ -38,7 +32,10 @@ class ChanelController extends Controller
     public function store(Request $request)
     {
         $input = $request->except('_token');
-        // dd($input);
+        $now = now();
+        $input['created_at'] = $now;
+        $input['updated_at'] = $now;
+        DB::table('chanels')->insert($input);
         return redirect(route('chanels.index'));
     }
 

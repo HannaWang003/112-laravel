@@ -18,10 +18,28 @@
 <p>Lorem ipsum dolor sit amet.</p>
 <form action="{{route('chanels.store')}}" method='post'>
     @csrf
-   <div class="row">
+   <div class="row my-1">
     <div class="col d-flex">
-       <div class="bg-dark text-light p-3">PRODUCT</div>
+       <div class="bg-dark text-light p-3 w-25">PRODUCT</div>
     <input type="text" name="product" id="" class="form-control mx-3"> 
+    </div>    
+</div>
+<div class="row my-1">
+    <div class="col d-flex">
+       <div class="bg-dark text-light p-3 w-25">NUM</div>
+    <input type="text" name="num" id="" class="form-control mx-3"> 
+    </div>    
+</div>
+<div class="row my-1">
+    <div class="col d-flex">
+       <div class="bg-dark text-light p-3 w-25">SH</div>
+    <input type="text" name="sh" id="" class="form-control mx-3"> 
+    </div>    
+</div>
+<div class="row my-1">
+    <div class="col d-flex">
+       <div class="bg-dark text-light p-3 w-25">Vote</div>
+    <input type="text" name="votes" id="" class="form-control mx-3"> 
     </div>    
 </div>
 <br>

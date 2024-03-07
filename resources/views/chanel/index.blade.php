@@ -28,13 +28,13 @@
             </tr>
         </thead>
         <tbody>
-@php
-$products=['handbag','watch','jewelry','shoes'];
-@endphp
-@foreach($products as $idx=> $product)
+@foreach($data['chanels'] as $idx=> $product)
         <tr>
-            <td><?=$idx+1?></td>
-            <td><?=$product?></td>
+            <td>{{$idx+1}}</td>
+            <td>{{$product->product}}</td>
+            <td>{{$product->num}}</td>
+            <td>{{$product->sh}}</td>
+            <td>{{$product->votes}}</td>
             <td><a class="btn btn-secondary mx-2" href="{{route('chanels.edit', ['chanel' => $idx+1])}}">Edit</a><a class="btn btn-outline-secondary" href="">Del</a></td>
         </tr>
 @endforeach
@@ -42,8 +42,5 @@ $products=['handbag','watch','jewelry','shoes'];
     </table>
     <h3 class='text-end'><a class="btn btn-outline-dark" href="{{route('brands.index')}}">back</a></h3>
 </div>
-@php
-dd($data);
-@endphp
 </body>
 </html>
