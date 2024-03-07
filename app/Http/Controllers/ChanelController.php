@@ -12,9 +12,9 @@ class ChanelController extends Controller
      */
     public function index()
     {
-        // return view('chanel.index');
-        $chanels = DB::table('chanels')->get();
-        dd($chanels);
+        $data['chanels'] = DB::table('chanels')->get();
+        $data['lvs'] = DB::table('lvs')->get();
+        return view('chanel.index', ['data' => $data]);
     }
 
     /**
@@ -22,8 +22,15 @@ class ChanelController extends Controller
      */
     public function create()
     {
-        return view('chanel.create');
+        $data = [
+            ['product' => 'underwear', 'num' => '2', 'sh' => '1', 'votes' => 0],
+            ['product' => 'shock', 'num' => '100', 'sh' => '1', 'votes' => 0],
+        ];
+        DB::table('chanels')->insert($data);
+        dd($data);
+        // return view('chanel.create');
     }
+
 
     /**
      * Store a newly created resource in storage.

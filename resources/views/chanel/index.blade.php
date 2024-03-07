@@ -42,5 +42,8 @@ $products=['handbag','watch','jewelry','shoes'];
     </table>
     <h3 class='text-end'><a class="btn btn-outline-dark" href="{{route('brands.index')}}">back</a></h3>
 </div>
+@php
+dd($data);
+@endphp
 </body>
 </html>
