@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BrandController;
 use App\Http\Controllers\ChanelController;
+use App\Http\Controllers\DiorController;
+use App\Http\Controllers\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,5 +28,7 @@ Route::get('/template', function () {
 
 Route::resource('brands', BrandController::class);
 Route::resource('chanels', ChanelController::class);
+Route::resource('diors', DiorController::class);
+Route::resource('products', ProductController::class);
 
 Route::get('/chaneltest', [ChanelController::class, 'test'])->name('Chanel.test');
