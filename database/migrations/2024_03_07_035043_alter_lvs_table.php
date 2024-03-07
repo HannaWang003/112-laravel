@@ -11,8 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('chanels', function (Blueprint $table) {
-            $table->integer('votes')->change();
+        Schema::table('lvs', function (Blueprint $table) {
+            $table->string('votes');
         });
     }
 
@@ -21,8 +21,8 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::table('chanels', function (Blueprint $table) {
-            $table->string('vote')->change();
+        Schema::table('lvs', function (Blueprint $table) {
+            $table->dropColumn('votes');
         });
     }
 };
