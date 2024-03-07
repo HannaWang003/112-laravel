@@ -14,8 +14,6 @@ return new class extends Migration
         Schema::create('diors', function (Blueprint $table) {
             $table->id();
             $table->string('product');
-            $table->string('num')->nullable();
-            $table->string('sh')->default('1');
             $table->timestamps();
         });
     }

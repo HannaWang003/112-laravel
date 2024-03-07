@@ -10,8 +10,8 @@ class Dior extends Model
 {
     use HasFactory;
     protected $table = 'diors';
-    public function product(): HasOne
+    public function products(): HasOne
     {
-        return $this->hasOne(Dior::class);
+        return $this->hasOne(Product::class);
     }
 }

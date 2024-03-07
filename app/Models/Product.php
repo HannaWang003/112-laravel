@@ -10,8 +10,8 @@ class Product extends Model
 {
     use HasFactory;
     protected $table = 'products';
-    public function dior(): BelongsTo
+    public function diors(): BelongsTo
     {
-        return $this->belongsTo(Product::class);
+        return $this->belongsTo(Dior::class);
     }
 }
