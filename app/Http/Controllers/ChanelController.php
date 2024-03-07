@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\DB;
+use App\Models\Chanel;
 use Illuminate\Http\Request;
 
 class ChanelController extends Controller
@@ -12,9 +13,11 @@ class ChanelController extends Controller
      */
     public function index()
     {
-        $data['chanels'] = DB::table('chanels')->get();
-        $data['lvs'] = DB::table('lvs')->get();
-        return view('chanel.index', ['data' => $data]);
+        // $data['chanels'] = DB::table('chanels')->get();
+        // $data['lvs'] = DB::table('lvs')->get();
+        // return view('chanel.index', ['data' => $data]);
+        $data = Chanel::all();
+        dd($data);
     }
 
     /**
