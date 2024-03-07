@@ -17,3 +17,7 @@
     {{-- <p>This is my body content.</p> --}}
     <h1>my template</h1>
 @endsection
+@section('footer')
+    {{-- <p>This is my body content.</p> --}}
+    <div class="bg-secondary"><h1 class="text-center">my footer</h1></div>
+@endsection
