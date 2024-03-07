@@ -144,6 +144,9 @@
             <li class="nav-item border border-light bg-dark p-2">
               <a class="nav-link text-light" href="{{route('template')}}"> template </a>
             </li>
+            <li class="nav-item border border-dark bg-light p-2">
+              <a class="nav-link text-dark" href="{{route('diors.index')}}"> Dior </a>
+            </li>
           </ul>
           <a
             href=""

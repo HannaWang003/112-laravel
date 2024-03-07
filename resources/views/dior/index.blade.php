@@ -15,6 +15,7 @@
 <body>
     <div class="container m-3 mx-auto">
         <h1>Dior - Page</h1>
+        <p>學習關聯式資料庫的應用</p>
         <h6 class='text-end'>
             <a class="btn btn-dark" href="{{route('diors.create')}}">Add</a>&nbsp;&nbsp;
         </h6>
@@ -23,7 +24,7 @@
             <tr>
                 <th>ID</th>
                 <th>PRODUCT</th>
-                <th>PRICE</th>
+                <th class="bg-secondary">PRICE</th>
                 <th>OPERATE</th>
             </tr>
         </thead>
@@ -35,7 +36,7 @@
         <tr>
             <td>{{$idx+1}}</td>
             <td>{{$product->product}}</td>
-            <td>{{$product->products->price}}</td>
+            <td class="bg-secondary">{{$product->products->price}}</td>
             <td><a class="btn btn-secondary mx-2" href="{{route('diors.edit', ['dior' => $idx+1])}}">Edit</a><a class="btn btn-outline-secondary" href="">Del</a></td>
         </tr>
 @endforeach
