@@ -13,11 +13,11 @@ class ChanelController extends Controller
      */
     public function index()
     {
-        // $data['chanels'] = DB::table('chanels')->get();
-        // $data['lvs'] = DB::table('lvs')->get();
-        // return view('chanel.index', ['data' => $data]);
-        $data = Chanel::all();
-        dd($data);
+        $data['chanels'] = DB::table('chanels')->get();
+        $data['lvs'] = DB::table('lvs')->get();
+        return view('chanel.index', ['data' => $data]);
+        // $data = Chanel::all();
+        // dd($data);
     }
 
     /**
