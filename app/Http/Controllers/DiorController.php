@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Dior;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class DiorController extends Controller
 {
@@ -21,7 +22,7 @@ class DiorController extends Controller
      */
     public function create()
     {
-        //
+        return view('dior.create');
     }
 
     /**
@@ -29,7 +30,12 @@ class DiorController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $input = $request->except('_token');
+        $now = now();
+        $input['created_at'] = $now;
+        $input['updated_at'] = $now;
+        DB::table('diors')->insert($input);
+        return redirect(route('diors.index'));
     }
 
     /**
@@ -45,7 +51,8 @@ class DiorController extends Controller
      */
     public function edit(Dior $dior)
     {
-        //
+        $data = $dior;
+        return  view('dior.edit', ['data' => $data]);
     }
 
     /**
