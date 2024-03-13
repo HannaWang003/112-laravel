@@ -16,7 +16,8 @@
     <div class="container m-3 mx-auto">
         <h1>Dior - create</h1>
 <p>Lorem ipsum dolor sit amet.</p>
-<form action="{{route('diors.store')}}" method='post'>
+<form action="{{route('diors.update',['dior'=>$data->id])}}" method='post'>
+    @method('PUT')
     @csrf
    <div class="row my-1">
     <div class="col d-flex">
@@ -27,7 +28,7 @@
    <div class="row my-1">
     <div class="col d-flex">
        <div class="bg-dark text-light p-3 w-25">PRICE</div>
-    <input type="text" name="product" id="" class="form-control mx-3" value="{{$data->productRelation->price}}"> 
+    <input type="text" name="price" id="" class="form-control mx-3" value="{{$data->productRelation->price}}"> 
     </div>    
 </div>
 <br>

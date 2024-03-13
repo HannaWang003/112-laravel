@@ -52,9 +52,9 @@ class DiorController extends Controller
     public function edit(Dior $dior)
     {
         $id = $dior->id;
-        $data = Dior::where('id', $id)->width('productRelation')->first();
-        dd($data);
-        exit();
+        $data = Dior::where('id', $id)->with('productRelation')->first();
+        // dd($data);
+        // exit();
         $data = $dior;
         return  view('dior.edit', ['data' => $data]);
     }
@@ -64,7 +64,12 @@ class DiorController extends Controller
      */
     public function update(Request $request, Dior $dior)
     {
-        //
+        $input = $request->except('_token', '_method');
+        $id = $dior->id;
+        $data = Dior::where('id', $id)->first();
+        $data->product = $input['product'];
+        $data->save();
+        return redirect()->route('diors.index');
     }
 
     /**
