@@ -27,7 +27,7 @@
    <div class="row my-1">
     <div class="col d-flex">
        <div class="bg-dark text-light p-3 w-25">PRICE</div>
-    <input type="text" name="product" id="" class="form-control mx-3" value="{{$data->products->price}}"> 
+    <input type="text" name="product" id="" class="form-control mx-3" value="{{$data->productRelation->price}}"> 
     </div>    
 </div>
 <br>

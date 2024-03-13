@@ -36,7 +36,7 @@
         <tr>
             <td>{{$idx+1}}</td>
             <td>{{$product->product}}</td>
-            <td class="bg-secondary">{{$product->products->price}}</td>
+            <td class="bg-secondary">{{$product->productRelation->price}}</td>
             <td><a class="btn btn-secondary mx-2" href="{{route('diors.edit', $product->id)}}">Edit</a><a class="btn btn-outline-secondary" href="">Del</a></td>
         </tr>
 @endforeach

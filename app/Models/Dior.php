@@ -10,7 +10,7 @@ class Dior extends Model
 {
     use HasFactory;
     protected $table = 'diors';
-    public function products(): HasOne
+    public function productRelation(): HasOne
     {
         return $this->hasOne(Product::class);
     }

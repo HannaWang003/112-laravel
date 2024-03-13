@@ -13,7 +13,7 @@ class DiorController extends Controller
      */
     public function index()
     {
-        $data = Dior::get();
+        $data = Dior::with('productRelation')->get();
         return view('dior.index', ['data' => $data]);
     }
 
@@ -51,6 +51,10 @@ class DiorController extends Controller
      */
     public function edit(Dior $dior)
     {
+        $id = $dior->id;
+        $data = Dior::where('id', $id)->width('productRelation')->first();
+        dd($data);
+        exit();
         $data = $dior;
         return  view('dior.edit', ['data' => $data]);
     }
