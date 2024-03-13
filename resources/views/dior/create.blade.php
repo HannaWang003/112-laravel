@@ -24,6 +24,12 @@
     <input type="text" name="product" id="" class="form-control mx-3"> 
     </div>    
 </div>
+   <div class="row my-1">
+    <div class="col d-flex">
+       <div class="bg-dark text-light p-3 w-25">PRICE</div>
+    <input type="text" name="price" id="" class="form-control mx-3"> 
+    </div>    
+</div>
 <br>
 <div class="row">
     <div class="col d-flex w-25 m-auto justify-content-end">

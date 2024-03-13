@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Dior;
+use App\Models\Product;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 
 class DiorController extends Controller
 {
@@ -14,6 +14,7 @@ class DiorController extends Controller
     public function index()
     {
         $data = Dior::with('productRelation')->get();
+        // dd($data);
         return view('dior.index', ['data' => $data]);
     }
 
@@ -31,10 +32,19 @@ class DiorController extends Controller
     public function store(Request $request)
     {
         $input = $request->except('_token');
-        $now = now();
-        $input['created_at'] = $now;
-        $input['updated_at'] = $now;
-        DB::table('diors')->insert($input);
+
+        //dior
+        $data = new Dior;
+        $data->product = $input['product'];
+        $data->save();
+
+        //product
+        $id = $data->id;
+        $item = new Product;
+        $item->dior_id = $id;
+        $item->price = $input['price'];
+        $item->save();
+
         return redirect(route('diors.index'));
     }
 
@@ -53,9 +63,6 @@ class DiorController extends Controller
     {
         $id = $dior->id;
         $data = Dior::where('id', $id)->with('productRelation')->first();
-        // dd($data);
-        // exit();
-        $data = $dior;
         return  view('dior.edit', ['data' => $data]);
     }
 
@@ -69,6 +76,13 @@ class DiorController extends Controller
         $data = Dior::where('id', $id)->first();
         $data->product = $input['product'];
         $data->save();
+
+        //子表刪除，再新增
+        Product::where('dior_id', $id)->delete();
+        $item = new Product();
+        $item->dior_id = $id;
+        $item->price = $input['price'];
+        $item->save();
         return redirect()->route('diors.index');
     }
 
@@ -77,6 +91,8 @@ class DiorController extends Controller
      */
     public function destroy(Dior $dior)
     {
-        //
+        Product::where('dior_id', $dior->id)->delete();
+        Dior::where('id', $dior->id)->delete();
+        return redirect()->route('diors.index');
     }
 }

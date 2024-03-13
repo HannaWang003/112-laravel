@@ -34,7 +34,7 @@
 <br>
 <div class="row">
     <div class="col d-flex w-25 m-auto justify-content-end">
-        <button class="btn btn-secondary mx-2">new</button>
+        <button class="btn btn-secondary mx-2">edit</button>
         <button class="btn btn-secondary mx-2">reset</button>
     </div>
 </div>

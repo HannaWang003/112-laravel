@@ -36,8 +36,14 @@
         <tr>
             <td>{{$idx+1}}</td>
             <td>{{$product->product}}</td>
-            <td class="bg-secondary">{{$product->productRelation->price}}</td>
-            <td><a class="btn btn-secondary mx-2" href="{{route('diors.edit', $product->id)}}">Edit</a><a class="btn btn-outline-secondary" href="">Del</a></td>
+            <td class="bg-secondary">
+                {{$product->productRelation->price}}
+            </td>
+            <td><a class="btn btn-secondary mx-2" href="{{route('diors.edit', $product->id)}}">Edit</a>
+                <form action="{{route('diors.destroy', $product->id)}}" method="post" style="display:inline-block">
+                    @csrf
+                    @method('DELETE')
+                    <button type="submit" class="btn btn-danger">Del</button></form></td>
         </tr>
 @endforeach
     </tbody>
