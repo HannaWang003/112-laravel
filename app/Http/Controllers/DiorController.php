@@ -32,7 +32,6 @@ class DiorController extends Controller
     public function store(Request $request)
     {
         $input = $request->except('_token');
-        // dd($input);
         $colors = $input['colors'];
         $colorArr = explode(',', $colors);
 
@@ -51,7 +50,7 @@ class DiorController extends Controller
         //color
         $id = $data->id;
         foreach ($colorArr as $key => $val) {
-            $itemColor = new Color;
+            $itemColor = new Color();
             $itemColor->dior_id = $id;
             $itemColor->color = $val;
             $itemColor->save();
@@ -90,6 +89,9 @@ class DiorController extends Controller
     {
         $input = $request->except('_token', '_method');
         $id = $dior->id;
+        $colors = $input['colors'];
+        $colorArr = explode(',', $colors);
+        // dd($colorArr);
         $data = Dior::where('id', $id)->first();
         $data->product = $input['product'];
         $data->save();
@@ -100,6 +102,15 @@ class DiorController extends Controller
         $item->dior_id = $id;
         $item->price = $input['price'];
         $item->save();
+        //子表刪除，再新增
+        Color::where('dior_id', $id)->delete();
+        // dd($colorArr);
+        foreach ($colorArr as $key => $val) {
+            $itemColor = new Color();
+            $itemColor->dior_id = $id;
+            $itemColor->color = $val;
+            $itemColor->save();
+        }
         return redirect()->route('diors.index');
     }
 

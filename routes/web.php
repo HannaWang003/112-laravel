@@ -5,6 +5,7 @@ use App\Http\Controllers\BrandController;
 use App\Http\Controllers\ChanelController;
 use App\Http\Controllers\DiorController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\ColorController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,5 +31,6 @@ Route::resource('brands', BrandController::class);
 Route::resource('chanels', ChanelController::class);
 Route::resource('diors', DiorController::class);
 Route::resource('products', ProductController::class);
+Route::resource('colors', ColorController::class);
 
 Route::get('/chaneltest', [ChanelController::class, 'test'])->name('Chanel.test');

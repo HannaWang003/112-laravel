@@ -34,7 +34,7 @@
    <div class="row my-1">
     <div class="col d-flex">
        <div class="bg-dark text-light p-3 w-25">COLOR</div>
-    <input type="text" name="price" id="" class="form-control mx-3" value="{{$data->colors}}"> 
+    <input type="text" name="colors" id="" class="form-control mx-3" value="{{$data->colors}}"> 
     </div>    
 </div>
 <br>
