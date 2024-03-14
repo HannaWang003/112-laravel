@@ -39,6 +39,14 @@
             <td class="bg-secondary">
                 {{$product->productRelation->price}}
             </td>
+            <td>
+                {{-- @php
+dd($product->colorRelations)
+                @endphp --}}
+                @foreach($product->colorRelations as $val)
+                {{"$val->color"}}</br>
+                @endforeach
+            </td>
             <td><a class="btn btn-secondary mx-2" href="{{route('diors.edit', $product->id)}}">Edit</a>
                 <form action="{{route('diors.destroy', $product->id)}}" method="post" style="display:inline-block">
                     @csrf

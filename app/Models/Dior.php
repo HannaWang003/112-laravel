@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasOne;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Dior extends Model
 {
@@ -13,5 +14,9 @@ class Dior extends Model
     public function productRelation(): HasOne
     {
         return $this->hasOne(Product::class);
+    }
+    public function colorRelations(): HasMany
+    {
+        return $this->hasMany(Color::class);
     }
 }

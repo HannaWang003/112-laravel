@@ -13,8 +13,13 @@ class DiorController extends Controller
      */
     public function index()
     {
-        $data = Dior::with('productRelation')->get();
-        // dd($data);
+        $data = Dior::with('productRelation')->with('colorRelations')->get();
+
+        // foreach ($data as $key => $val) {
+        //     foreach ($val->colorRelations as $key => $val2) {
+        //         echo "<h2>$val2->color</h2>";
+        //     }
+        // }
         return view('dior.index', ['data' => $data]);
     }
 
