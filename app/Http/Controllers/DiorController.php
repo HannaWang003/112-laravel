@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Dior;
 use App\Models\Product;
+use App\Models\Color;
 use Illuminate\Http\Request;
 
 class DiorController extends Controller
@@ -14,20 +15,6 @@ class DiorController extends Controller
     public function index()
     {
         $data = Dior::with('productRelation')->with('colorRelations')->get();
-<<<<<<< HEAD
-
-        // foreach ($data as $key => $val) {
-        //     foreach ($val->colorRelations as $key => $val2) {
-        //         echo "<h2>$val2->color</h2>";
-        //     }
-        // }
-=======
-        foreach ($data as $key => $val) {
-            foreach ($val->colorRelations as $key => $val2) {
-                echo "<h2>$val2->color</h2>";
-            }
-        }
->>>>>>> e958c4649cd5f3330c91d544558c3663416e4ea1
         return view('dior.index', ['data' => $data]);
     }
 
@@ -45,6 +32,9 @@ class DiorController extends Controller
     public function store(Request $request)
     {
         $input = $request->except('_token');
+        // dd($input);
+        $colors = $input['colors'];
+        $colorArr = explode(',', $colors);
 
         //dior
         $data = new Dior;
@@ -57,6 +47,15 @@ class DiorController extends Controller
         $item->dior_id = $id;
         $item->price = $input['price'];
         $item->save();
+
+        //color
+        $id = $data->id;
+        foreach ($colorArr as $key => $val) {
+            $itemColor = new Color;
+            $itemColor->dior_id = $id;
+            $itemColor->color = $val;
+            $itemColor->save();
+        }
 
         return redirect(route('diors.index'));
     }
@@ -75,7 +74,12 @@ class DiorController extends Controller
     public function edit(Dior $dior)
     {
         $id = $dior->id;
-        $data = Dior::where('id', $id)->with('productRelation')->first();
+        $data = Dior::where('id', $id)->with('productRelation')->with('colorRelations')->first();
+        $colorArr = [];
+        foreach ($data->colorRelations as $key => $val) {
+            array_push($colorArr, $val->color);
+        };
+        $data['colors'] = implode(",", $colorArr);
         return  view('dior.edit', ['data' => $data]);
     }
 
@@ -105,6 +109,7 @@ class DiorController extends Controller
     public function destroy(Dior $dior)
     {
         Product::where('dior_id', $dior->id)->delete();
+        Color::where('dior_id', $dior->id)->delete();
         Dior::where('id', $dior->id)->delete();
         return redirect()->route('diors.index');
     }

@@ -31,6 +31,12 @@
     <input type="text" name="price" id="" class="form-control mx-3" value="{{$data->productRelation->price}}"> 
     </div>    
 </div>
+   <div class="row my-1">
+    <div class="col d-flex">
+       <div class="bg-dark text-light p-3 w-25">COLOR</div>
+    <input type="text" name="price" id="" class="form-control mx-3" value="{{$data->colors}}"> 
+    </div>    
+</div>
 <br>
 <div class="row">
     <div class="col d-flex w-25 m-auto justify-content-end">

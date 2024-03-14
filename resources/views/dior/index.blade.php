@@ -25,6 +25,7 @@
                 <th>ID</th>
                 <th>PRODUCT</th>
                 <th class="bg-secondary">PRICE</th>
+                <th class="bg-secondary">COLORS</th>
                 <th>OPERATE</th>
             </tr>
         </thead>
@@ -39,7 +40,7 @@
             <td class="bg-secondary">
                 {{$product->productRelation->price}}
             </td>
-            <td>
+            <td class="bg-secondary">
                 {{-- @php
 dd($product->colorRelations)
                 @endphp --}}
